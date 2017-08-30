@@ -1,0 +1,91 @@
+body, html {
+  height: 100%;
+  width:100%;
+}
+body  {
+    background-image: url("../images/bg.jpg");
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size: 14px;
+}
+.outer {
+	width:100%;
+	height: 100%;
+}
+.cat-title{
+	padding-left:15px;
+}
+
+.cat-title h4{
+	color:#f5bc37;
+	padding-right: 15px;
+    padding-left: 15px;
+}
+
+.men{
+	clear:both;
+	padding-left:15px;
+}
+.men img {
+   margin:1px;
+   padding:1px;
+   border:1px solid #021a40;
+   background-color:#ff0;
+}
+.men p{
+	color:#fff;
+	margin: 5px 0 10px;
+}
+.men strong{
+	color:#fff;
+	margin: 5px 0 10px;
+}
+.men a{
+	color:#fff;
+	margin: 5px 0 10px;
+}
+.top {
+	/*background:#a8d3f7;*/
+	background-image: url("../images/bg.jpg");
+	width: 100%;
+	max-height: 50%;
+	margin: auto;
+	top:0;
+	overflow: auto;
+	transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+}
+
+.bottom {
+	/*background:#42bcf4;*/
+	background-image: url("../images/bg.jpg");
+	max-height: 50%;
+	overflow: auto;
+	width: 100%;
+	margin: auto;
+	bottom:0;
+}
+
+.split_menu{
+	position:absolute;		
+	right: 30px;
+	bottom: 30px;
+	border-radius:50%;
+}
+.header {
+    min-height: 50px;
+    border: 1px solid transparent;
+    margin: 10px;
+	padding:15px;
+}
+.badge-notify{
+    background:red;
+    right: 10px;
+  }
+.my-cart-icon-affix {
+	position: fixed;
+	z-index: 999;
+}
+.my-cart-icon{
+	color:#f5bc37;
+}
