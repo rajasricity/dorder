@@ -1,4 +1,4 @@
-var SERVER_DO = "http://localhost/";
+var SERVER_DO = "http://edarshan.org/";
 // DB connection
 jQuery(document).ready(function(){
 	reload_page();
