@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>D_Order</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+		<script src="js/jquery-3.2.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/custom.js"></script>
+		<script type='text/javascript' src="js/jquery.mycart.js"></script>
+	</head>
+	<body>
+		<section id="con_error" class="outer" style="display:none;text-align:center;">
+			<p style="color:#f5bc37;font-size:18px;margin-top:20%;">Please check your internet connection.</p>
+			<button onclick="reload_page();" class="btn btn-warning" style="border-radius:50px;"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+		</section>
+		<section id="con_success" class="outer" style="display:none;overflow:auto">
+			<div class="header">
+				<div style="float: right; cursor: pointer;">
+					<span class="glyphicon glyphicon-shopping-cart my-cart-icon"><span class="badge badge-notify my-cart-badge"></span></span>
+				</div>
+				<img src="images/logo.png" class="img-responsive" width="70px" height="70px"/>
+			</div>
+			<div class="cat-title">
+				<h4>Starter</h4>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Paneer-Papdi.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Papadi Paneer </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.10</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn" data-id="1" data-name="Papadi Paneer 1" data-summary="Papadi Paneer summary 1" data-price="10" data-quantity="1" data-image="images/Paneer-Papdi.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/seekh-kebab-620.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Seekh Kebab </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.20</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="2" data-name="Seekh Kebab 2" data-summary="Seekh Kebab summary 2" data-price="20" data-quantity="1" data-image="images/seekh-kebab-620.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Tandoori-Chicken-6-1-of-1.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Tandoori Chicken </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.30</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="3" data-name="Tandoori Chicken 3" data-summary="Tandoori Chicken summary 3" data-price="30" data-quantity="1" data-image="images/Tandoori-Chicken-6-1-of-1.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Mutton-Boti-Kabab.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Mutton Boti Kebab </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.40</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="4" data-name="Mutton Boti Kebab 4" data-summary="Mutton Boti Kebab summary 4" data-price="40" data-quantity="1" data-image="images/Mutton-Boti-Kabab.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/fish-fingers.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Finger Fish </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.30</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="5" data-name="Finger Fish 5" data-summary="Finger Fish summary 5" data-price="30" data-quantity="1" data-image="images/fish-fingers.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cat-title">
+				<h4>Main Course</h4>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Gongura-Mutton.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Gongura Mutton </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="6" data-name="Gongura Mutton 6" data-summary="Gongura Mutton summary 6" data-price="80" data-quantity="1" data-image="images/Gongura-Mutton.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/paneer-butter-masala.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Paneer Butter Masala </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="7" data-name="Paneer Butter Masala 7" data-summary="Paneer Butter Masala summary 7" data-price="80" data-quantity="1" data-image="images/paneer-butter-masala.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Kaju-Paneer.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Kaju Paneer </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>	
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="8" data-name="Kaju Paneer 8" data-summary="Kaju Paneer summary 8" data-price="80" data-quantity="1" data-image="images/Kaju-Paneer.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Chicken-65.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Chicken 65 </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="9" data-name="Chicken 9" data-summary="Chicken summary 9" data-price="80" data-quantity="1" data-image="images/Chicken-65.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Mutton-Nalli-Pulusu.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Mutton Nalli Pulusu </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="10" data-name="Mutton Nalli Pulusu 10" data-summary="Mutton Nalli Pulusu summary 10" data-price="80" data-quantity="1" data-image="images/Mutton-Nalli-Pulusu.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cat-title">
+				<h4>Biryanis</h4>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/vegetable-biryani.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Vegetable Biryani</p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="11" data-name="Vegetable Biryani 11" data-summary="Vegetable Biryani 11" data-price="80" data-quantity="1" data-image="images/vegetable-biryani.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/egg-biryani.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Egg Biryani </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="12" data-name="Egg Biryani 12" data-summary="Egg Biryani summary 12" data-price="80" data-quantity="1" data-image="images/egg-biryani.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Chicken-Biryani.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Chicken Biryani</p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="13" data-name="Chicken Biryani 13" data-summary="Chicken Biryani summary 13" data-price="80" data-quantity="1" data-image="images/Chicken-Biryani.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/prawn-biryani.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Prawns Biryani </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="14" data-name="Prawns Biryani 14" data-summary="Prawns Biryani summary 14" data-price="80" data-quantity="1" data-image="images/prawn-biryani.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/mutton-biryani.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Mutton Biryani </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.80</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="15" data-name="Mutton Biryani 15" data-summary="Mutton Biryani summary 15" data-price="80" data-quantity="1" data-image="images/mutton-biryani.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="clearfix"></div>
+			<div class="cat-title">
+				<h4>Beverages</h4>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Coke.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Coke(600 ml) </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.30</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="16" data-name="Coke(600 ml) 16" data-summary="Coke(600 ml) 16" data-price="30" data-quantity="1" data-image="images/Coke.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Thums-Up.jpg" width="50px" height="30px"></div>
+				<div class="col-md-6 col-xs-6"><p>Thums Up(600 ml) </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.30</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="17" data-name="Thums Up(600 ml) 17" data-summary="Thums Up(600 ml) summary 17" data-price="30" data-quantity="1" data-image="images/Thums-Up.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			<div class="men">
+				<div class="col-md-1 col-xs-1"><img src="images/Sprite.jpg" width="50px" height="30px"></div>	
+				<div class="col-md-6 col-xs-6"><p>Sprite(600 ml) </p></div>
+				<div class="col-md-3 col-xs-3"><strong>Rs.30</strong></div>
+				<div class="col-md-2 col-xs-2"><a href="#" class="my-cart-btn"  data-id="18" data-name="Sprite(600 ml) 18" data-summary="Sprite(600 ml) summary 18" data-price="30" data-quantity="1" data-image="images/Sprite.jpg"><i class="fa fa-cart-plus" aria-hidden="true"></i></a></div>
+			</div>
+			
+			<a href="split_menu_2.html" class="split_menu btn btn-warning pull-right"><i class="fa fa-columns" aria-hidden="true"></i></a>
+		</section>
+	</body>
+</html>
